@@ -1,0 +1,21 @@
+﻿
+body {
+    background-color: #1a1a1a;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 320px) {
+
+
+
+
+    .img-responsive {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .main {
+        margin-top: 50px !important;
+    }
+}
+
+

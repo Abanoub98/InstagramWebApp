@@ -1,0 +1,122 @@
+﻿@model InstgramWebApp.ViewModels.UserStory
+@{
+    Layout = "";
+}
+
+@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StoryView</title>
+    <link rel="stylesheet" href="~/Content/CSS/main.css">
+    <link rel="stylesheet" href="~/Content/CSS/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/CSS/storyview.css">
+
+    <link href="~/Content/fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="storyNav" style="background-color: transparent;border-bottom: none; ">
+        <img src="~/Content/img/ff9b85f2b7ca.png" class="brand-img pull-left" style="margin-top: 15px;margin-left: 15px;" alt="">
+        <a href="@Url.GenerateHref(nameof(HomeController.Index),nameof(HomeController),Request)" style="float: right;">
+            <i class="fas fa-times" style="font-size: 30px;color: white;margin-right: 20px;margin-top: 20px;"></i>
+        </a>
+    </nav>
+    <!--Navbar section-->
+    <!-- Story View section -->
+    <section class="main" style="margin-top: -70px;">
+        <button onclick="scrollToLeft()" class="scrollButton"><i class="fas fa-arrow-left"></i></button>
+        <div class="col-md-4">
+            <div class="post">
+
+                <div class="info" style="background-color: transparent;">
+                    <div class="user">
+                        <div class="profile-pic">
+                            <a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),new {controller="Profile",id=Model.Story.CreatorID},Request)" style="text-decoration:none;">
+                                <img src="@Model.Story.Creator.ImgPath" alt="">
+                            </a>
+                        </div>
+                        <a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),new {controller="Profile",id=Model.Story.CreatorID},Request)" style="text-decoration:none;">
+                            <p class="username">@Model.Story.Creator.Username</p>
+                        </a>
+                        <span style="color: grey;font-size: 10px; margin-left: 5px; margin-bottom:2px">@Model.Story.CreatedAt.ToString("MMM d, yyyy")</span>
+                    </div>
+                    @if (Model.Story.CreatorID == Model.ActiveUserId)
+                    {
+                        using (Html.BeginForm("DeleteStory", "Post", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            @Html.Hidden("storyId", @Model.Story.Id)
+                            <button type="submit" class="delete" style="border: none; background-color: transparent;"><i class="fas fa-trash"></i></button>
+                        }
+                    }
+                </div>
+          
+
+
+                <div class="status-wrapper-post storyView" id="scrollSection" style="height: auto;">
+
+
+                    @foreach (var storyfile in Model.Story.StoryFiles)
+                    {
+
+
+                        if (storyfile.FilePath.Contains(".mp4"))
+                        {
+                            <video id="vidpost" controls>
+                                <source src="@storyfile.FilePath" type="video/mp4">
+                                <source src="@storyfile.FilePath" type="video/ogg">
+                            </video>
+                        }
+                        else
+                        {
+                            <img src="@storyfile.FilePath" class="post-image" alt="">
+                        }
+                    }
+
+                </div>
+            </div>
+
+        </div>
+        <button onclick="scrollToRight()" class="scrollButton"><i class="fas fa-arrow-right"></i></button>
+    </section>
+    <!--Story View section-->
+
+
+</body>
+</html>
+
+
+<script>
+
+    function scrollToLeft() {
+        let storySection = document.getElementById("scrollSection");
+        storySection.scrollLeft -= storySection.clientWidth;
+    }
+
+    function scrollToRight() {
+        let storySection = document.getElementById("scrollSection");
+        storySection.scrollLeft += storySection.clientWidth;
+    }
+
+    (function () {
+        const videoPost = document.querySelectorAll("video");
+        const post = document.getElementsByClassName("post")[0];
+        videoPost.forEach(vid => {
+            vid.setAttribute("width", post.clientWidth);
+        })
+
+    })();
+
+    window.addEventListener('resize', function (event) {
+        const videoPost = document.querySelectorAll("video");
+        const post = document.getElementsByClassName("post")[0];
+        videoPost.forEach(vid => {
+            vid.setAttribute("width", post.clientWidth);
+        })
+    }, true);
+</script>

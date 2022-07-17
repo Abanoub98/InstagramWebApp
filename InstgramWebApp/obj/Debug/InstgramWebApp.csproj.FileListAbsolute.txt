@@ -1,0 +1,481 @@
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.AssemblyReference.cache
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.CoreCompileInputs.cache
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.dll.config
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.pdb
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.exe
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.exe.config
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.rsp
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.exe
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.exe.config
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.rsp
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Console.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Net.Http.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.exe
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.exe.config
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.rsp
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Antlr3.Runtime.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\EntityFramework.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Newtonsoft.Json.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Owin.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.Helpers.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.Mvc.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.Optimization.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.Razor.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\WebGrease.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.Helpers.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.Mvc.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.Optimization.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.Razor.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Newtonsoft.Json.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\EntityFramework.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.CopyComplete
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.pdb
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.InitialMigration.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.GenerateResource.cache
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB1.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB2.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB3.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB4.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB5.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB6.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Options.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Buffers.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.ComponentModel.Annotations.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Memory.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Numerics.Vectors.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Text.Encodings.Web.dll
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Options.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Buffers.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Memory.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Numerics.Vectors.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\bin\System.Text.Encodings.Web.xml
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changes.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB1.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changes2.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.test.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB2.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.test1.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.InsertPostDate.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.removeReq.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable1.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable2.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable21.resources
+C:\Users\Killer-B9\source\repos\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable22.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.dll.config
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.pdb
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.exe
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.exe.config
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.rsp
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.exe
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.exe.config
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.rsp
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.AppContext.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Console.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Net.Http.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Net.Sockets.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.exe
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.exe.config
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.rsp
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Antlr3.Runtime.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\EntityFramework.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\EntityFramework.SqlServer.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.ObjectPool.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Options.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Newtonsoft.Json.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Owin.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Buffers.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.ComponentModel.Annotations.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Memory.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Numerics.Vectors.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Text.Encodings.Web.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Helpers.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Mvc.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Optimization.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Razor.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\WebGrease.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.ObjectPool.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Options.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Buffers.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Memory.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Numerics.Vectors.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Text.Encodings.Web.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Helpers.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Mvc.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Optimization.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Razor.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Newtonsoft.Json.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Antlr3.Runtime.pdb
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\EntityFramework.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\EntityFramework.SqlServer.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.AssemblyReference.cache
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.InitialMigration.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB1.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB2.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB3.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB4.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB5.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB6.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changes.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB1.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changes2.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.test.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB2.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.test1.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.InsertPostDate.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.removeReq.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable1.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable2.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable21.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable22.resources
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.GenerateResource.cache
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.CoreCompileInputs.cache
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.CopyComplete
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.dll
+C:\Users\20128\Desktop\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.pdb
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.dll.config
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\InstgramWebApp.pdb
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.exe
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.exe.config
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csc.rsp
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.exe
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.exe.config
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\csi.rsp
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Managed.Core.targets
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.AppContext.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Collections.Immutable.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Console.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Globalization.Calendars.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.Compression.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.FileSystem.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Net.Http.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Net.Sockets.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.ValueTuple.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XPath.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.exe
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.exe.config
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\vbc.rsp
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\VBCSCompiler.exe
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\roslyn\VBCSCompiler.exe.config
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Antlr3.Runtime.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\EntityFramework.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\EntityFramework.SqlServer.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.ObjectPool.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Options.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Primitives.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Net.Http.Headers.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Google.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Web.Infrastructure.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Newtonsoft.Json.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Owin.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Buffers.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.ComponentModel.Annotations.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Memory.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Numerics.Vectors.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Text.Encodings.Web.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Helpers.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Mvc.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Optimization.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Razor.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Deployment.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Razor.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\WebGrease.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.ObjectPool.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Options.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Extensions.Primitives.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Net.Http.Headers.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Buffers.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Memory.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Numerics.Vectors.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Text.Encodings.Web.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Helpers.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Mvc.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Optimization.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.Razor.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Deployment.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\System.Web.WebPages.Razor.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Newtonsoft.Json.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Antlr3.Runtime.pdb
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\EntityFramework.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\EntityFramework.SqlServer.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Google.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.AssemblyReference.cache
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.InitialMigration.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB1.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB2.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB3.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB4.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB5.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seedDB6.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changes.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB1.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changes2.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.test.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.seebDB2.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.test1.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.InsertPostDate.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.removeReq.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable1.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable2.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable21.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.changeStoryTable22.resources
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.GenerateResource.cache
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.CoreCompileInputs.cache
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.csproj.CopyComplete
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.dll
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.pdb
+D:\BEBO\WEB Projects\IA Project\InstgramWebApp\InstgramWebApp\obj\Debug\InstgramWebApp.Migrations.addCommentIDinNotification.resources

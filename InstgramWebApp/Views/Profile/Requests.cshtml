@@ -1,0 +1,110 @@
+﻿@model  InstgramWebApp.ViewModels.UserRequests
+@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+@{
+    ViewBag.Title = "Requests";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["css"] = new string[1] { "~/Content/CSS/search.css" };
+}
+
+
+<section class="main">
+    <div class="wrapper">
+        <div class="left-col">
+            <!-- Follow Requests -->
+            <div class="container">
+                @if (Model.followRequests.Count != 0)
+                {
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="people-nearby">
+                                @foreach (var request in Model.followRequests)
+                                {
+                                    <div class="nearby-user">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-2">
+                                                <a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),new {controller="Profile",id=request.FromUserID},Request)">
+                                                    <img src="@request.FromUser.ImgPath" alt="user" class="profile-photo-lg">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7">
+
+                                                <h5><a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),new {controller="Profile",id=request.FromUserID},Request)" class="profile-link" style="color: black; font-size: 18px;text-decoration:none;">@request.FromUser.Username</a></h5>
+                                                <p class="text-muted">@request.FromUser.FName @request.FromUser.LName</p>
+
+                                                <p><i class="fas fa-user-friends"> </i> @request.FromUser.FriendShips.Count friends</p>
+                                                @using (Html.BeginForm("", "FriendShip", FormMethod.Post))
+                                                {
+                                                    @Html.AntiForgeryToken()
+                                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                                    @Html.Hidden("toUserId", @request.FromUserID)
+                                                    <button type="submit" name="action" value="Confirm" class="btn btn-primary" style="float: left; margin-right: 5px; background-color: black; border-color: black;">Confirm</button>
+
+                                                    <button type="submit" name="action" value="Delete" class="btn btn-primary" style="background-color: white; color: black; border: 1px solid; ">Delete</button>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                }
+                else
+                {
+                    <h2 style="text-align:center;color:black;margin-top:35px; font-size:1.4rem;">No requests were found <i class="fas fa-search-minus"></i></h2>
+                    @*<img class="d-flex" src="~/Content/img/no-posts-yet.png" style="width:100%;" />*@
+
+                }
+
+
+
+            </div>
+            <!-- End Search Results -->
+        </div>
+
+
+        <!-- Suggestion section -->
+        <div class="right-col">
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="@Model.activeUser.ImgPath" alt="">
+                </div>
+                <div>
+                    <p class="username">@Model.activeUser.Username</p>
+                    <p class="sub-text">@Model.activeUser.FName @Model.activeUser.LName</p>
+                </div>
+
+            </div>
+            @if (Model.Users.Count != 0)
+            {
+                <p class="suggestion-text">Suggestions for you</p>
+
+                foreach (var user in Model.Users)
+                {
+
+                    <div class="profile-card">
+                        <div class="profile-pic">
+                            <img src="@user.ImgPath" alt="">
+                        </div>
+                        <div>
+                            <a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),new {controller="Profile",id=user.Id},Request)" style="text-decoration:none;"><p class="username" style="text-align:start;">@user.Username</p></a>
+                            <p class="sub-text">@user.FriendShips.Count Friends</p>
+                        </div>
+                    </div>
+
+
+                }
+            }
+            else
+            {
+                <p class="suggestion-text">No suggestions for you</p>
+            }
+            <p style="font-weight: 100;color: #c7c7c7; font-size: 12px;">© 2022 INSATGRAM BY ABANOUB RAFAAT</p>
+        </div>
+        <!-- Suggestion section -->
+    </div>
+</section>

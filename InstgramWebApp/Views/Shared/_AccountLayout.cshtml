@@ -1,0 +1,25 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/CSS/bootstrap.css")
+    @{
+        if (ViewData["css"] != default(string[]))
+        {
+            foreach (var style in ViewData["css"] as string[])
+            {
+                @Styles.Render(style);
+            }
+        }
+
+    }
+    <link href="~/Content/fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div> 
+        @RenderBody();
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstgramWebApp", "InstgramWebApp\InstgramWebApp.csproj", "{38E66391-BD0D-4AF1-9110-AFFB61E9EAA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38E66391-BD0D-4AF1-9110-AFFB61E9EAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E66391-BD0D-4AF1-9110-AFFB61E9EAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E66391-BD0D-4AF1-9110-AFFB61E9EAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E66391-BD0D-4AF1-9110-AFFB61E9EAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCE72B4C-1B38-4B0F-B446-09369F7D5839}
+	EndGlobalSection
+EndGlobal

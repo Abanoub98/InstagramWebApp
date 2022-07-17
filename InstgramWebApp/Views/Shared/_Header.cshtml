@@ -1,0 +1,132 @@
+﻿@model InstgramWebApp.Models.User
+@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+<!--Navbar section-->
+
+
+<nav class="instaNavbar">
+    <div class="nav-wrapper">
+        <img src="~/Content/img/Instagram_logo.svg.png" class="brand-img" alt="">
+        @using (Html.BeginForm("SearchResult", "Home", FormMethod.Get, new
+        {
+            @style = "margin-top: -23px;",
+        }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            @Html.TextBox("searchInput", "", new {@class= "search-box",@placeholder="search" } )
+            @*<input class="search-box" type="text" id="searchInput" placeholder="search">*@
+
+        }
+    <div class="nav-items">
+
+
+        <a href="@Url.GenerateHref(nameof(HomeController.Index),nameof(HomeController),Request)"><img src="~/Content/img/home.PNG" class="icon" alt=""></a>
+        <a href="@Url.GenerateHref(nameof(HomeController.Index),nameof(HomeController),Request)"><img src="~/Content/img/messenger.PNG" class="icon" alt=""></a>
+        <a href="@Url.GenerateHref(nameof(PostController.Create),nameof(PostController),Request)"><img src="~/Content/img/add.PNG" class="icon" alt=""></a>
+        <a href="@Url.GenerateHref(nameof(HomeController.Reels),nameof(HomeController),Request)"><img src="~/Content/img/explore.PNG" class="icon" alt=""></a>
+
+
+
+
+        <img src="~/Content/img/like.PNG" class="icon dropbtn" onclick="likesToggle()" alt="">
+        @if (Model.ReactNotifications.Count != 0 || Model.FollowRequests.Count != 0)
+        {
+            var totalNotificationCount = Model.ReactNotifications.Count+Model.FollowRequests.Count;
+            if (totalNotificationCount < 10)
+            {
+                <span style="background-color:red;color:white;border-radius: 50%; font-size:11px; margin-left: -20px; padding: 1px 5px;">@totalNotificationCount</span>
+            }
+            else if (totalNotificationCount > 10 && totalNotificationCount < 100)
+            {
+                <span style="background-color:red;color:white;border-radius: 50%; font-size:11px; margin-left: -20px; padding: 1px 2px;">@totalNotificationCount</span>
+            }
+            else
+            {
+                <span style="background-color:red;color:white;border-radius: 50%; font-size:10px; margin-left: -20px; padding: 2px 2px;">99+</span>
+            }
+
+        }
+
+    <div id="myDropdown2" class="dropdown-content">
+
+        <a href="@Url.GenerateHref(nameof(ProfileController.Requests),nameof(ProfileController),Request)" style="font-size: 14px; font-weight: 500;text-decoration: none;display:block">
+            <i class="fas fa-user-friends" style="margin-right: 7px;"></i>Follow Requests<i class="fas fa-angle-right" style="margin-left: 70px;font-weight: 500;color: grey;"></i>
+            @if (Model.FollowRequests.Count != 0)
+            {
+                if (Model.FollowRequests.Count < 10)
+                {
+                    <span style="background-color:red;color:white;border-radius: 50%; font-size:11px; margin-left: -80px; padding: 1px 6px;">@Model.FollowRequests.Count</span>
+                }
+                else if (Model.FollowRequests.Count > 10 && Model.FollowRequests.Count < 100)
+                {
+                    <span style="background-color:red;color:white;border-radius: 50%; font-size:11px; margin-left: -80px; padding: 1px 3px;">@Model.FollowRequests.Count</span>
+                }
+
+            }
+        </a>
+        <hr style="color: rgb(187, 187, 187);">
+
+        @if (Model.ReactNotifications.Count != 0)
+        {
+            foreach (var notification in Model.ReactNotifications)
+            {
+                <div class="likedPics" >
+                    <a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),new {controller="Profile",id=notification.FromUserID},Request)" class="dropdownA">
+                        <img src="@notification.FromUser.ImgPath" class="icon" style="width: 30px;height: 30px; border-radius: 50%;float: left;margin-top: 3px;">
+                        <span class="dropdownSpan">@notification.FromUser.Username</span>
+
+                    </a>
+                    <a href="@Url.GenerateHref(nameof(PostController.Details),nameof(PostController),new {controller="Post",id=@notification.PostID},Request)" style="padding: 0px 0px; color: inherit;">
+                        @if (notification.Reaction == "Like")
+                        {
+                            <p style="display: inline-block; margin-top:7px;">liked your photo</p>
+                        }
+                        else if (notification.Reaction == "Comment")
+                        {
+                            <p style="display: inline-block; margin-top:7px;">commented on your photo</p>
+                        }                       
+                    </a>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="likedPics" style="font-size: 14px;">
+                <div class="noNotifications d-flex flex-column text-center">
+                    <i class="far fa-bell fa-2x align-self-center"></i>
+                    <h6 style="display: inline-block; margin-top: 7px; align-self:center;">No notifications yet</h6>
+                    <span>When you get notifications, they'll show up here</span>
+                    <a href="" style="background-color: #ebf1ff; color: #4b85e3; align-self:center; padding:4px 4px; margin-bottom:6px;text-decoration:none;">Refresh</a>
+                </div>
+            </div>
+        }
+
+    </div>
+
+
+
+
+        <img class="icon dropbtn" src="@Model.ImgPath" onclick="profileToggle()" style="border-radius: 50%; width: 25px; height: 23px;">
+        <div id="myDropdown" class="dropdown-content">
+            <a href="@Url.GenerateHref(nameof(ProfileController.Index), nameof(ProfileController), new {id=string.Empty},Request)" style="font-size: 14px;text-decoration: none;display:block;"><i class="fas fa-user" style="margin-right: 5px;"></i>Profile</a>
+            <a href="@Url.GenerateHref(nameof(ProfileController.Setting),nameof(ProfileController),Request)" style="font-size: 14px;text-decoration: none; display:block;"><i class="fas fa-cog" style="margin-right: 4px"></i>Setting</a>
+            <hr style="color: rgb(187, 187, 187);">
+            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new
+            {
+                enctype = "multipart/form-data"
+            }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <input style="font-size: 14px; border: none; background-color: white; margin-left: 20px;" type="submit" value="Log Out" class="logOut">
+            }
+        </div>
+
+
+
+    </div>
+    </div>
+</nav>
+<!--Navbar section-->

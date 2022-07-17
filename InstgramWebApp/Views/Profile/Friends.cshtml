@@ -1,0 +1,107 @@
+﻿@model  InstgramWebApp.ViewModels.UserFriends
+@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["css"] = new string[1] { "~/Content/CSS/search.css" };
+}
+
+
+<!-- Search Results -->
+<section class="main" >
+    <div class="container"  >
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <div class="people-nearby">
+                    @if (Model.User.FriendShips.Count() != 0)
+                    {
+                        foreach (var friend in Model.User.FriendShips)
+                        {
+                            if (friend.User1.Id != Model.User.Id)
+                            {
+                                <div class="nearby-user">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-2">
+                                            <a href="@Url.GenerateHref(nameof(ProfileController.Index), nameof(ProfileController), new { controller = "Profile", id = friend.User1.Id }, Request)">
+                                                <img src="@friend.User1.ImgPath" alt="user" class="profile-photo-search">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7">
+                                            <h5><a href="@Url.GenerateHref(nameof(ProfileController.Index), nameof(ProfileController), new { controller = "Profile", id = friend.User1.Id }, Request)" class="profile-link" style="color: black; font-size: 18px;text-decoration:none;">@friend.User1.Username</a></h5>
+                                            <p class="text-muted">@friend.User1.FName @friend.User1.LName</p>
+
+                                            <p><i class="fas fa-user-friends"> </i> @friend.User1.FriendShips.Count friends</p>
+                                        </div>
+
+                                        @if (Model.ActiveUserId == Model.User.Id)
+                                        {
+                                            using (Html.BeginForm("UnfriendFromFriends", "FriendShip", FormMethod.Post))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                                @Html.Hidden("toUserId", friend.User1ID)
+                                                <div class="col-md-3 col-sm-3">
+                                                    <button id="Unfriend"  class="btn FormBtn" type="submit" style="font-size: 0.8rem;" title="Unfriend User"><span>Friends</span></button>
+                                                </div>
+                                            }
+                                         }
+                                        </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="nearby-user">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-2">
+                                            <a href="@Url.GenerateHref(nameof(ProfileController.Index), nameof(ProfileController), new { controller = "Profile", id = friend.User2.Id }, Request)">
+                                                <img src="@friend.User2.ImgPath" alt="user" class="profile-photo-search">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7">
+                                            <h5><a href="@Url.GenerateHref(nameof(ProfileController.Index), nameof(ProfileController), new { controller = "Profile", id = friend.User2.Id }, Request)" class="profile-link" style="color: black; font-size: 18px;text-decoration:none;">@friend.User2.Username</a></h5>
+                                            <p class="text-muted">@friend.User2.FName @friend.User2.LName</p>
+
+                                            <p><i class="fas fa-user-friends"> </i> @friend.User2.FriendShips.Count friends</p>
+                                        </div>
+
+                                        @if (Model.ActiveUserId == Model.User.Id)
+                                        {
+                                            using (Html.BeginForm("UnfriendFromFriends", "FriendShip", FormMethod.Post))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                                @Html.Hidden("toUserId", friend.User2ID)
+
+                                                <div class="col-md-3 col-sm-3">
+                                                    <button id="Unfriend" class="btn FormBtn" type="submit" style="font-size: 0.8rem;" title="Unfriend User"><span>Friends</span></button>
+                                                </div>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        <div class="no-results-found">
+                            <div class="container d-flex justify-content-center">
+                                <div class="col-16">
+                                    <img src="~/Content/img/no result.png" />
+                                    <h3 style=" text-align: center;">No Friends Found</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

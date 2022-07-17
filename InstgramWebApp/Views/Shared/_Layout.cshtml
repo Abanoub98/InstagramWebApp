@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Instagram</title>
+    @Styles.Render("~/Content/CSS/main.css")
+    @Styles.Render("~/Content/CSS/bootstrap.css")
+    @Scripts.Render("~/bundles/modernizr")
+    @{
+        if (ViewData["css"] != default(string[]))
+        {
+            foreach (var style in ViewData["css"] as string[])
+            {
+                @Styles.Render(style);
+            }
+        }
+
+    }
+
+    <link href="~/Content/fonts/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+</head>
+
+
+<body>
+
+    @{Html.RenderAction("_Header");}
+
+
+    @RenderBody()
+
+
+    @{Html.RenderPartial("_Footer");}
+
+
+    <script src="~/Scripts/main.js"></script>
+</body>
+
+
+
+
+</html>

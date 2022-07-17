@@ -1,0 +1,119 @@
+﻿@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+@model InstgramWebApp.ViewModels.RegisterViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+    ViewData["css"] = new string[1] { "~/Content/CSS/login.css" };
+}
+
+<div class="RegisterForm" style="margin-top: 170px;">
+    <div class="container">
+        <div class="box">
+            <img class="logo" src="~/Content/img/Instagram_logo.svg.png">
+            <p style="text-align: center; font-size: 18px;font-weight: 500 ;margin-top: 2px; padding: 0px 10px; color: grey;">Sign up to see photos and videos from your friends.</p>
+
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new
+            {
+                enctype = "multipart/form-data"
+            }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="field">
+
+
+
+                    @Html.EditorFor(model => model.User.Email, new { htmlAttributes = new { @type = "email", @placeholder = "Email", @id = "email" } })
+                    @Html.LabelFor(model => model.User.Email)
+                    @Html.ValidationMessageFor(model => model.User.Email, "", new { @class = "text-danger", @style = "display:flex;" })
+
+                </div>
+                <div class="field">
+
+                    @Html.EditorFor(model => model.User.FName, new { htmlAttributes = new { @type = "text", @placeholder = "First Name", @id = "fname" } })
+                    @Html.LabelFor(model => model.User.FName)
+                    @Html.ValidationMessageFor(model => model.User.FName, "", new { @class = "text-danger", @style = "display:flex;" })
+                </div>
+                <div class="field">
+                    @Html.EditorFor(model => model.User.LName, new { htmlAttributes = new { @type = "text", @placeholder = "Last Name", @id = "lname" } })
+                    @Html.LabelFor(model => model.User.LName)
+                    @Html.ValidationMessageFor(model => model.User.LName, "", new { @class = "text-danger", @style = "display:flex;" })
+                </div>
+                <div class="field">
+                    @Html.EditorFor(model => model.User.Username, new { htmlAttributes = new { @type = "name", @placeholder = "Username", @id = "username" } })
+                    @Html.LabelFor(model => model.User.Username)
+                    @Html.ValidationMessageFor(model => model.User.Username, "", new { @class = "text-danger", @style = "display:flex;" })
+                </div>
+                <div class="field">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @type = "password", @placeholder = "Password", @id = "password" } })
+                    @Html.LabelFor(model => model.Password)
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", @style = "display:flex;" })
+                    <a id="clear" onclick="showFunc()">Show</a>
+                </div>
+                <div class="field">
+                    @Html.EditorFor(model => model.User.Mobile, new { htmlAttributes = new { @type = "tel", @placeholder = "Mobile", @id = "mobile" } })
+                    @Html.LabelFor(model => model.User.Mobile)
+                    @Html.ValidationMessageFor(model => model.User.Mobile, "", new { @class = "text-danger", @style = "display:flex;" })
+                </div>
+                <div class="field">
+                    @Html.EditorFor(model => model.User.BirthDate, new { htmlAttributes = new { @type = "date", @placeholder = "Birthday", @id = "birthday" } })
+                    @Html.LabelFor(model => model.User.BirthDate)
+                    @Html.ValidationMessageFor(model => model.User.BirthDate, "", new { @class = "text-danger", @style = "display:flex;" })
+                </div>
+                <div class="field">
+                    <input type="file" name="ImgFile" style="padding-bottom:9px" />
+                    <label for="ImgFile">Profile Picture</label>
+                </div>
+                <div class="field">
+                    @Html.EditorFor(model => model.User.Country, new { htmlAttributes = new { @type = "text", @placeholder = "Country", @id = "country" } })
+                    @Html.LabelFor(model => model.User.Country)
+                    @Html.ValidationMessageFor(model => model.User.Country, "", new { @class = "text-danger", @style = "display:flex;" })
+                </div>
+                <div class="field">
+                    @Html.TextAreaFor(model => model.User.Bio,3,15, new { @type = "text", @placeholder = "  Bio", @id = "bio" , @style="resize:none;" })
+
+                    @Html.ValidationMessageFor(model => model.User.Bio, "", new { @class = "text-danger", @style = "display:flex;" })
+                </div>
+                <button class="login-button" title="signup" type="submit">Sign up</button>
+
+            }
+            <a style="text-align: center; font-size: 11px; margin-top: 2px; padding: 10px 15px; color: grey;">
+                By signing up, you agree to our Terms ,
+                Data Policy and Cookies Policy .
+            </a>
+        </div>
+        <div class="box">
+            <p>Have an account? <a class="signup" href="@Url.GenerateHref(nameof(AccountController.Login),nameof(AccountController),Request)">Log in</a></p>
+        </div>
+    </div>
+</div>
+
+
+@{
+    Html.RenderPartial("_Footer");
+}
+
+<script>
+    window.oninput = function (event) {
+        const myInput = document.getElementById("password");
+        if (myInput.value != "") {
+            document.getElementById("clear").style.display = "block";
+        }
+        else {
+            document.getElementById("clear").style.display = "none";
+        }
+    }
+    function showFunc() {
+        let myA = document.getElementById("clear");
+        const myInput = document.getElementById("password");
+        if (myInput.type === "password") {
+            myInput.type = "text"
+            myA.innerText = "Hide";
+        }
+        else {
+            myInput.type = "password";
+            myA.innerText = "Show";
+        }
+    }
+</script>  

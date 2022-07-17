@@ -1,0 +1,69 @@
+﻿@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+@model InstgramWebApp.ViewModels.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+    ViewData["css"] = new string[1] { "~/Content/CSS/login.css" };
+}
+
+
+<div class="loginForm" style="margin-top: 170px;">
+    <div class="container">
+        <div class="box">
+            <img class="logo" src="~/Content/img/Instagram_logo.svg.png">
+            <form class="login-form" action="/Account/Login" method="post">
+                @Html.AntiForgeryToken()
+                @Html.ValidationMessage("LoginState", new { @style = "color:red;text-align:center;display:block;" })
+                <div class="field">
+                    <input id="username" type="text" placeholder="Username" name="Username" />
+                    <label for="username">Username</label>
+                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger", @style = "display:flex;" })
+                </div>
+                <div class="field">
+                    <input id="password" type="password" placeholder="password" name="Password" />
+                    <label for="password">Password</label>
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", @style = "display:flex;" })
+                    <a id="clear" onclick="showFunc()">Show</a>
+                </div>
+                <button class="login-button" title="login">Log In</button>
+                <hr />
+                <div class="other">
+                    <a class="forgot-password" href="@Url.GenerateHref(nameof(AccountController.ForgetPassword),nameof(AccountController),Request)">Forgot password?</a>
+                </div>
+            </form>
+        </div>
+        <div class="box">
+            <p>Don't have an account? <a class="login" href="@Url.GenerateHref(nameof(AccountController.Register),nameof(AccountController),Request)">Sign Up</a></p>
+        </div>
+    </div>
+</div>
+
+
+@{
+    Html.RenderPartial("_Footer");
+}
+
+<script>
+    window.oninput = function (event) {
+        const myInput = document.getElementById("password");
+        if (myInput.value != "") {
+            document.getElementById("clear").style.display = "block";
+        }
+        else {
+            document.getElementById("clear").style.display = "none";
+        }
+    }
+    function showFunc() {
+        let myA = document.getElementById("clear");
+        const myInput = document.getElementById("password");
+        if (myInput.type === "password") {
+            myInput.type = "text"
+            myA.innerText = "Hide";
+        }
+        else {
+            myInput.type = "password";
+            myA.innerText = "Show";
+        }
+    }
+</script>  

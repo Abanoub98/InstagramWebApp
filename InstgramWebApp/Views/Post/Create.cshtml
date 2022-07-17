@@ -1,0 +1,42 @@
+﻿@model InstgramWebApp.ViewModels.PostViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["css"] = new string[1] { "~/Content/CSS/createPost.css"};
+}
+
+<div class="postForm" style="margin-top: 170px;">
+    <div class="container">
+        <div class="box">
+            <h3>Create Post</h3>
+            
+                @using (Html.BeginForm("", "Post", FormMethod.Post, new
+                {
+                    enctype = "multipart/form-data" ,@class="post-form"
+                }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="images field" id="imageField">
+                        <input class="formInput" name="ImgFiles" type="file" id="file" multiple required style="height: auto;" />
+                        <label for="file">Select photo(s) from file</label>
+                    </div>
+                    <div class="caption field" id="captionField">
+                        @Html.EditorFor(model => model.Caption, new { htmlAttributes = new {@class="formInput", @type = "text", @placeholder = "Write a caption..", @id = "captionField" , @style = "height: auto;" } })
+                        @Html.LabelFor(model => model.Caption)
+                        @Html.ValidationMessageFor(model => model.Caption, "", new { @class = "text-danger", @style = "display:flex;" })
+                    </div>
+                    <div class="story field" id="storyField">
+                        <input class="formInput" id="story" type="checkbox" style="height: auto;margin-left: -70px;" onclick="storySection()" />
+                        <label for="story" style="font-weight: bold; color: black;">Story</label>
+                    </div>
+                    <button class="post-button" title="share" name="action" value="CreatePost" type="submit">Share</button>
+
+                    <hr>
+                    <br>
+                }
+               
+        </div>
+    </div>
+</div>
+<br>

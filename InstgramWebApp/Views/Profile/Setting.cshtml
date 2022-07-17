@@ -1,0 +1,246 @@
+﻿@model InstgramWebApp.ViewModels.SettingViewModel
+@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+@{
+    ViewBag.Title = "Setting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["css"] = new string[2] { "~/Content/CSS/settings.css", "https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" };
+}
+<div class="container light-style flex-grow-1 container-p-y" style="max-width: 1020px;">
+
+
+    <br>
+    <br>
+    @if (TempData["AlertMessage"] != null)
+    {
+        <div class="alert alert-success">
+            <strong>Success: </strong>@TempData["AlertMessage"]
+        </div>
+    }
+    <div class="card overflow-hidden">
+        <div class="row no-gutters row-bordered row-border-light">
+            <div class="col-md-3 pt-0">
+                <div class="list-group list-group-flush account-settings-links">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#profileInfo">Profile Info</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#changePassword">Change password</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#personalInfo">Personal Info</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+
+                    <div class="tab-pane fade active show" id="profileInfo">
+                        @using (Html.BeginForm("RemovePhoto", "Profile"))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <button title="Remove Photo" type="submit" style=" position: absolute; border-radius:50%; align-self: flex-start; padding: 1px 5px; font-size: 9px; border: none; background-color: red;  margin-left: 20px; top: 20px;">
+                                <i class="fas fa-times" style="color:white;"></i>
+                            </button>
+                        }
+                        @using (Html.BeginForm("ProfileInfo", "Profile", FormMethod.Post, new
+                        {
+                            enctype = "multipart/form-data",
+                            @id = "profileInfoForm"
+                        }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="card-body media align-items-center">
+                                <img src="@Model.user.ImgPath" alt="" class="d-block ui-w-80">
+
+                                <div class="media-body ml-4">
+                                    <label class="btn btn-outline-primary">
+                                        Change Profile Photo
+
+                                        <input type="file" name="ImgFile" class="account-settings-fileinput">
+                                    </label> &nbsp;
+
+                                    <div class=" small mt-1">Allowed JPG, JPEG or PNG.</div>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input class="form-control mb-1" type="text" placeholder="@Model.user.Username" disabled />
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.user.FName, new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.user.FName, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                                    @Html.ValidationMessageFor(model => model.user.FName, "", new { @class = "text-danger", @style = "display:flex;" })
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.user.LName, new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.user.LName, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                                    @Html.ValidationMessageFor(model => model.user.LName, "", new { @class = "text-danger", @style = "display:flex;" })
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.user.Bio, new { @class = "form-label" })
+                                    @Html.TextAreaFor(model => model.user.Bio, 2, 93, new { @class = "form-control", @style = "resize:none;" })
+                                    @Html.ValidationMessageFor(model => model.user.Bio, "", new { @class = "text-danger", @style = "display:flex;" })
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="tab-pane fade" id="changePassword">
+
+                        @using (Html.BeginForm("ChangePassword", "Profile", FormMethod.Post, new
+                        {
+                            enctype = "multipart/form-data",
+                            @id = "changePasswordForm"
+                        }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            @Html.ValidationMessage("CurrentPass", new { @style = "color:red;text-align:center;display:block;" })
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.pass.CurrentPassword, new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.pass.CurrentPassword, new { htmlAttributes = new { @class = "form-control", @type = "password", @id = "currentPassword", @style = "float:left;" } })
+                                    <a id="clear" onclick="showFunc()" style="display:none;justify-content:end;margin-top:5px;">Show</a>
+                                    @Html.ValidationMessageFor(model => model.pass.CurrentPassword, "", new { @class = "text-danger", @style = "display:block;" })
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.pass.NewPassword, new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.pass.NewPassword, new { htmlAttributes = new { @class = "form-control", @type = "password", @id = "newPassword", @style = "float:left;" } })
+                                    <a id="clearNP" onclick="showFunc2()" style="display:none;justify-content:end;margin-top:5px;">Show</a>
+                                    @Html.ValidationMessageFor(model => model.pass.NewPassword, "", new { @class = "text-danger", @style = "display:block;" })
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.pass.RepeatNewPassword, new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.pass.RepeatNewPassword, new { htmlAttributes = new { @class = "form-control", @type = "password", @id = "rnewPassword", @style = "float:left;" } })
+                                    <a id="clearRNP" onclick="showFunc3()" style="display:none;justify-content:end;margin-top:5px;">Show</a>
+                                    @Html.ValidationMessageFor(model => model.pass.RepeatNewPassword, "", new { @class = "text-danger", @style = "display:block;" })
+                                </div>
+                                <br>
+                            </div>
+                        }
+
+                    </div>
+                    <div class="tab-pane fade" id="personalInfo">
+                        @using (Html.BeginForm("PersonalInfo", "Profile", FormMethod.Post, new
+                        {
+                            enctype = "multipart/form-data",
+                            @id = "personalInfoForm"
+                        }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.user.Email, new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.user.Email, new { htmlAttributes = new { @class = "form-control", @type = "email" } })
+                                    @Html.ValidationMessageFor(model => model.user.Email, "", new { @class = "text-danger", @style = "display:flex;" })
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label class="form-label">Birthday</label>
+                                    <input type="date" class="form-control" name="user.Birthdate" value="@Model.user.BirthDate.Date.ToString("yyyy-MM-dd")">
+                                    @Html.ValidationMessageFor(model => model.user.BirthDate, "", new { @class = "text-danger", @style = "display:flex;" })
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.user.Country, new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.user.Country, new { htmlAttributes = new { @class = "form-control", @type = "text" } })
+                                    @Html.ValidationMessageFor(model => model.user.Country, "", new { @class = "text-danger", @style = "display:flex;" })
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.user.Mobile, new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.user.Mobile, new { htmlAttributes = new { @class = "form-control", @type = "tel" } })
+                                    @Html.ValidationMessageFor(model => model.user.Mobile, "", new { @class = "text-danger", @style = "display:flex;" })
+                                </div>
+                            </div>
+                            <br>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-right mt-3">
+        <button type="button" class="btn btn-primary" onclick="submitActiveForm()">Save changes</button>&nbsp;
+        <a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),Request)" class="btn btn-default">Cancel</a>
+    </div>
+
+</div>
+
+
+
+<script>
+    window.oninput = function (event) {
+        const myInput = document.getElementById("currentPassword");
+        if (myInput.value != "") {
+            document.getElementById("clear").style.display = "flex";
+        }
+        else {
+            document.getElementById("clear").style.display = "none";
+        }
+
+        const myInput2 = document.getElementById("newPassword");
+        if (myInput2.value != "") {
+            document.getElementById("clearNP").style.display = "flex";
+        }
+        else {
+            document.getElementById("clearNP").style.display = "none";
+        }
+
+        const myInput3 = document.getElementById("rnewPassword");
+        if (myInput3.value != "") {
+            document.getElementById("clearRNP").style.display = "flex";
+        }
+        else {
+            document.getElementById("clearRNP").style.display = "none";
+        }
+
+    }
+    function showFunc() {
+        let myA = document.getElementById("clear");
+        const myInput = document.getElementById("currentPassword");
+
+        if (myInput.type === "password") {
+            myInput.type = "text"
+            myA.innerText = "Hide";
+        }
+        else {
+            myInput.type = "password";
+            myA.innerText = "Show";
+        }
+    }
+
+    function showFunc2() {
+        let myA2 = document.getElementById("clearNP");
+        const myInput2 = document.getElementById("newPassword");
+
+        if (myInput2.type === "password") {
+            myInput2.type = "text"
+            myA2.innerText = "Hide";
+        }
+        else {
+            myInput2.type = "password";
+            myA2.innerText = "Show";
+        }
+    }
+
+    function showFunc3() {
+        let myA3 = document.getElementById("clearRNP");
+        const myInput3 = document.getElementById("rnewPassword");
+
+        if (myInput3.type === "password") {
+            myInput3.type = "text"
+            myA3.innerText = "Hide";
+        }
+        else {
+            myInput3.type = "password";
+            myA3.innerText = "Show";
+        }
+    }
+
+</script>  

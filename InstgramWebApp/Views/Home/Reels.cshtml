@@ -1,0 +1,190 @@
+﻿@model  IEnumerable<InstgramWebApp.Models.Post>
+@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+@{
+    ViewBag.Title = "Reels";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Start gallery Area -->
+<section class="gallery-area section-gap ml-3">
+    <div class="container">
+        <div class="row">
+            @if (Model.Count() != 0)
+            {
+                foreach (var post in Model)
+                {
+
+                    
+                        <a href="@Url.GenerateHref(nameof(PostController.Details),nameof(PostController),new {controller="Post",id=post.Id},Request)" class="img-gal">
+                            <div class="single-imgs relative">
+                                <div class="overlay overlay-bg"></div>
+                                <div class="relative" style="margin-right:6px;">
+                                    @if (post.PostFiles.ElementAt(0).FilePath.Contains(".mp4"))
+                                    {
+                                        <video id="vidpost" width="350" height="300" controls>
+                                            <source src="@post.PostFiles.ElementAt(0).FilePath" type="video/mp4">
+                                            <source src="@post.PostFiles.ElementAt(0).FilePath" type="video/ogg">
+                                        </video>
+                                    }
+                                    else
+                                    {
+                                        <img class="img-fluid" style="height:300px" src="@post.PostFiles.ElementAt(0).FilePath"  width="350" alt="">
+                                    }
+
+                                </div>
+                            </div>
+                        </a>
+                    
+                }
+
+            }
+            else
+            {
+                <div class="post" style="margin-top: 27px;">
+                    <div style="height: auto;">
+                        <img src="~/Content/img/no-posts-yet.png" class="post-image" height="510" alt="">
+                    </div>
+                </div>
+            }
+
+            @*<div class="col-lg-5">
+                    <a href="~/Content/img/gallery/g2.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g2.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="~/Content/img/gallery/g3.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g3.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="~/Content/img/gallery/g4.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g4.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="~/Content/img/gallery/g5.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g5.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <a href="~/Content/img/gallery/g6.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g6.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <a href="~/Content/img/gallery/g7.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g7.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <a href="~/Content/img/gallery/g1.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relatie">
+                                <img class="img-fluid" src="~/Content/img/gallery/g1.jpg" height="20%" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <a href="~/Content/img/gallery/g2.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g2.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="~/Content/img/gallery/g3.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g3.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="~/Content/img/gallery/g4.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g4.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="~/Content/img/gallery/g5.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g5.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <a href="~/Content/img/gallery/g6.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g6.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <a href="~/Content/img/gallery/g7.jpg" class="img-gal">
+                        <div class="single-imgs relative">
+                            <div class="overlay overlay-bg"></div>
+                            <div class="relative">
+                                <img class="img-fluid" src="~/Content/img/gallery/g7.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>*@
+        </div>
+    </div>
+</section>
+<!-- End gallery Area -->

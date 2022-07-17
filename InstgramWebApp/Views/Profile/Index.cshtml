@@ -1,0 +1,206 @@
+﻿ @model InstgramWebApp.ViewModels.HomeViews
+@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["css"] = new string[1] { "~/Content/CSS/profile.css" };
+}
+
+<div class="container">
+
+    <div class="profile">
+
+        <div class="profile-image">
+
+            <img src="@Model.user.ImgPath" width="150" height="150" alt="">
+
+        </div>
+
+        <div class="profile-user-settings">
+
+
+            <h1 class="profile-user-name">@Model.user.Username</h1>
+
+            @if (Model.ActiveUserID == Model.user.Id)
+            {
+                <a class="btn profile-edit-btn" href="~/Profile/Setting/" style="border: 0.2px solid rgb(179, 179, 179);">Edit Profile</a>
+
+                <a class="btn profile-settings-btn" href="~/Profile/Setting/" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></a>
+            }
+            else
+            {
+                var flag = 0;
+                foreach (var friendship in Model.user.FriendShips)
+                {
+                    if ((friendship.User1ID == Model.user.Id && friendship.User2ID == Model.ActiveUserID) || (friendship.User1ID == Model.ActiveUserID && friendship.User2ID == Model.user.Id))
+                    {
+
+                        using (Html.BeginForm("UnfriendFromProfile", "FriendShip", FormMethod.Post, new
+                        {
+                            style = "display:inline-block;"
+                        }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <button id="Unfriend" class="btn profile-edit-btn FormBtn" style="border: 1px solid #dbdbdb; color: #262626;" type="submit" ><span>Friends</span></button>
+                            @Html.Hidden("toUserId", @Model.user.Id)
+                        }
+
+                        flag++;
+                        break;
+                    }
+                }
+
+                if (flag == 0)
+                {
+                    foreach (var request in Model.user.FollowRequests)
+                    {
+
+                        if ((request.FromUserID == Model.ActiveUserID && request.ToUserID == Model.user.Id))
+                        {
+                            flag++;
+                            using (Html.BeginForm("DeleteRequestFromProfile", "FriendShip", FormMethod.Post, new
+                            {
+                                style = "display:inline-block;"
+                            }))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                <button id="Unsend" class="btn profile-edit-btn FormBtn" style="border: 1px solid #dbdbdb; color: #262626;" type="submit"><span>Requested</span></button>
+                                @Html.Hidden("toUserId", @Model.user.Id)
+                            }
+                            break;
+                        }
+                    }
+                }
+
+                if (flag == 0)
+                {
+                    using (Html.BeginForm("SendRequestFromProfile", "FriendShip", FormMethod.Post, new
+                    {
+                        style = "display:inline-block;"
+                    }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <button class="btn profile-edit-btn FollowBtn" style="border:none;background-color: #0f9bf7; color:white;" type="submit">Follow</button>
+                        @Html.Hidden("toUserId", @Model.user.Id)
+                    }
+
+                }
+            }
+
+
+        </div>
+
+                        <div class="profile-stats">
+
+                            <ul>
+                                @if (Model.user.Posts == null)
+                                {
+                                    <li><span class="profile-stat-count">0</span> posts</li>
+                                }
+                                else
+                                {
+                                    <li><a href="#ProfileGallery" style="text-decoration:none;color:inherit;"><span class="profile-stat-count">@Model.user.Posts.Count</span> posts</a></li>
+                                }
+                                @if (Model.user.FriendShips == null)
+                                {
+                                    <li><span class="profile-stat-count">0</span> friends</li>
+                                }
+                                else
+                                {
+                                    <li><a href="@Url.GenerateHref(nameof(ProfileController.Friends),nameof(ProfileController),new {controller="Profile",id=Model.user.Id},Request)" style="text-decoration:none;color:inherit;"><span class="profile-stat-count">@Model.user.FriendShips.Count</span> friends</a></li>
+                                }
+                            </ul>
+
+                        </div>
+
+                        <div class="profile-bio">
+
+                            <p><span class="profile-real-name">@Model.user.FName @Model.user.LName</span> <br />@Model.user.Bio</p>
+
+                        </div>
+
+                    </div>
+    <!-- End of profile section -->
+
+</div>
+<!-- End of container -->
+
+<main>
+
+    <div class="container">
+
+        <div class="gallery" id="ProfileGallery">
+
+            @if (Model.user.Posts != null)
+            {
+
+                foreach (var post in Model.user.Posts)
+                {
+                   
+                    <div class="gallery-item" tabindex="0">
+
+                        @if (post.PostFiles.ElementAt(0).FilePath.Contains(".mp4"))
+                        {
+                            <video src="@post.PostFiles.ElementAt(0).FilePath" class="gallery-image" alt="">
+                            </video>
+                        }
+                        else
+                        {
+                            <img src="@post.PostFiles.ElementAt(0).FilePath" class="gallery-image" alt="">
+                        }
+
+                        <a href="@Url.GenerateHref(nameof(PostController.Details),nameof(PostController),new {controller="Post",id=post.Id},Request)" style="color: white;">
+                            @if (post.PostFiles.Count > 1)
+                            {
+                                <div class="gallery-item-type">
+                                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                                </div>
+                            }
+                            else if (post.PostFiles.ElementAt(0).FilePath.Contains(".mp4"))
+                            {
+                                <div class="gallery-item-type">
+                                    <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+                                </div>
+                            }
+
+
+                            <div class="gallery-item-info">
+
+                                <ul>
+                                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> @post.NoOfLikes</li>
+                                    @if (post.Comments != null)
+                                    {
+                                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> @post.Comments.Count()</li>
+                                    }
+                                    else
+                                    {
+                                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                                    }
+
+                                </ul>
+
+                            </div>
+                        </a>
+
+
+
+                    </div>
+                }
+            }
+
+
+
+
+
+        </div>
+        <!-- End of gallery -->
+
+
+
+    </div>
+    <!-- End of container -->
+</main>

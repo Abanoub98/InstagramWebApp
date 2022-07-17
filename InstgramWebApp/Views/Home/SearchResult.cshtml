@@ -1,0 +1,103 @@
+﻿@model  InstgramWebApp.ViewModels.UserSearch
+@using InstgramWebApp.Controllers
+@using InstgramWebApp.Extensions
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["css"] = new string[1] { "~/Content/CSS/search.css" };
+}
+
+
+<!-- Search Results -->
+<section class="main" >
+    <div class="container"  >
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <div class="people-nearby">
+                    @if (Model.users.Count != 0)
+                    {
+                        foreach (var user in Model.users)
+                        {
+                            <div class="nearby-user">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-2">
+                                        <a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),new {controller="Profile",id=user.Id},Request)">
+                                            <img src="@user.ImgPath" alt="user" class="profile-photo-search">
+                                            </a>
+                                    </div>
+                                    <div class="col-md-7 col-sm-7">
+                                        <h5><a href="@Url.GenerateHref(nameof(ProfileController.Index),nameof(ProfileController),new {controller="Profile",id=user.Id},Request)" class="profile-link" style="color: black; font-size: 18px;text-decoration:none;">@user.Username</a></h5>
+                                        <p class="text-muted">@user.FName @user.LName</p>
+
+                                        <p><i class="fas fa-user-friends"> </i> @user.FriendShips.Count friends</p>
+                                    </div>
+                                    @using (Html.BeginForm("", "FriendShip", FormMethod.Post))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                        <div class="col-md-3 col-sm-3">
+                                            @Html.Hidden("toUserId", @user.Id)
+
+                                            @if (Model.users != null)
+                                            {
+                                                var flag = 0;
+                                                foreach (var friendship in Model.activeUser.FriendShips)
+                                                {
+                                                    if ((friendship.User1ID == Model.activeUser.Id && friendship.User2ID == user.Id) || (friendship.User1ID == user.Id && friendship.User2ID == Model.activeUser.Id))
+                                                    {
+                                                        <button id="Unfriend" name="action" value="Unfriend"  class="btn FormBtn" type="submit" style="font-size: 0.8rem;"  title="Unfriend User"><span>Friends</span></button>
+                                                        flag++;
+                                                        break;
+                                                    }
+                                                }
+
+                                                if (flag == 0)
+                                                {
+                                                    foreach (var request in Model.activeUser.FollowRequests)
+                                                    {
+
+                                                        if ((request.FromUserID == Model.activeUser.Id && request.ToUserID == user.Id) )
+                                                        {
+                                                            flag++;
+                                                            <button id="Unsend" name="action" value="DeleteFromSearch" class="btn FormBtn" type="submit" style="font-size: 0.66rem;" title="Unsend Follow Request"><span>Requested</span></button>
+                                                            break;
+                                                        }
+                                                    }
+                                                }
+
+                                                if (flag == 0)
+                                                {
+                                                    <button name="action" value="SendRequest" class="btn FollowBtn" type="submit" style="border: none; color: white; background-color: #0095f6; font-size: 0.9rem; font-weight: 600;" title="Send Follow Request">Follow</button>
+                                                }
+                                            }
+
+
+
+                                        </div>
+                                    }
+
+                                </div>
+                            </div>
+                        }
+
+                    }
+                    else
+                    {
+                        <div class="no-results-found">
+                            <div class="container d-flex justify-content-center">
+                                <div class="col-16">
+                                    <img src="~/Content/img/no result.png" />
+                                    <h3 style=" text-align: center;">No Results Found</h3>
+                                </div>
+                          
+                            </div>
+
+                        </div>
+
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

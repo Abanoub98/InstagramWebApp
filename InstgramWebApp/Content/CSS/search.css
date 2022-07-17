@@ -1,0 +1,126 @@
+
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+
+
+.col-md-7{
+margin-left: 70px;
+}
+
+/*
+ * off canvas sidebar
+ * --------------------------------------------------
+ */
+ @media screen and (max-width: 480px) and (min-width: 320px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left.active {
+    left: 33%;
+  }
+
+  .row-offcanvas-left.active .sidebar-offcanvas {
+    left: -33%;
+    position: absolute;
+    top: 0;
+    width: 33%;
+    margin-left: 5px;
+  }
+
+  #sidebar, #sidebar a, #sidebar-footer a {
+    padding-left:3px;
+  }
+
+  
+  .col-md-7{
+    margin-left: 0px;
+    }
+   .right-col {
+     display: none;
+   }
+   .main {
+    margin-left: 0 !important;
+  }
+}
+
+/*Search Css */
+/*==================================================
+  Nearby People CSS
+  ==================================================*/
+
+  
+  
+  .people-nearby .nearby-user{
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #bbbbbb;
+    margin-bottom: 15px;
+  }
+  .profile-link {
+  font-weight: bold;
+  font-size: 15px;
+  }
+  img.profile-photo-lg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+
+
+  img.profile-photo-search{
+    height: 110px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: -5px;
+  }
+
+.FormBtn {
+    border: 1px solid #dbdbdb;
+    color: #262626;
+    background-color: white;
+    font-weight: 600;
+}
+
+.FormBtn:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
+#Unfriend:hover span {
+    display: none;
+}
+
+#Unfriend:hover:before {
+    content: "Unfriend";
+}
+
+
+#Unsend:hover span {
+    display: none;
+}
+
+#Unsend:hover:before {
+    content: "Cancel";
+    padding: 6px 9px;
+}
+
+.FollowBtn:hover {
+    background-color: #0073f6 !important;
+    color: white;
+}
+
+/*==================================================
+  No results div
+  ==================================================*/
